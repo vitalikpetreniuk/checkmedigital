@@ -332,7 +332,7 @@ body._lock {
 	// .info-content__animate
 	&__animate {
 		display: inline-block;
-		transform: translateY(9px);
+		margin-bottom: -9px;
 		overflow: hidden;
 
 		// .info-content__animate span
@@ -628,7 +628,7 @@ body._lock {
 	
 		// .info-content__animate
 		&__animate {
-			transform: translateY(6px);
+			margin-bottom: -6px;
 		}
 	
 		// .info-content__text

@@ -379,9 +379,7 @@ body._lock {
 
 .info-content__animate {
   display: inline-block;
-  -webkit-transform: translateY(9px);
-      -ms-transform: translateY(9px);
-          transform: translateY(9px);
+  margin-bottom: -9px;
   overflow: hidden;
 }
 
@@ -705,9 +703,7 @@ body._lock {
   }
 
   .info-content__animate {
-    -webkit-transform: translateY(6px);
-        -ms-transform: translateY(6px);
-            transform: translateY(6px);
+    margin-bottom: -6px;
   }
 
   .info-content__text {
