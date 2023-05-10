@@ -446,6 +446,7 @@ body._lock {
 
 		// .info-content__link span
 		& span {
+			display: inline-block;
 			position: relative;
 			padding-right: 25px;
 		}
