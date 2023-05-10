@@ -104,9 +104,9 @@ body._lock {
 }
 
 ._cont {
-	max-width: $mw + 30px;
+	max-width: $mw + 40px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 20px;
 }
 
 .main {
@@ -116,6 +116,30 @@ body._lock {
 }
 
 //<=================================================================== ХЕДЕР ===============================================================>\\
+
+.support {
+	font: 500 14px/1.21 $ff;
+	text-align: center;
+
+	// .support p
+	& p {
+		display: inline-block;
+		position: relative;
+		padding-right: 20px;
+	}
+
+	// .support p::before
+	& p::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		width: 16px;
+		height: 15px;
+		background: url(../img/heart.svg) center/contain no-repeat;
+	}
+}
 
 .header {
 
@@ -140,24 +164,6 @@ body._lock {
 		align-items: flex-start;
 		gap: 17px;
 		font: 500 14px/1.21 $ff;
-	}
-
-	// .header__support
-	&__support {
-		position: relative;
-		padding-right: 20px;
-
-		// .header__support::before
-		&::before {
-			content: "";
-			position: absolute;
-			top: 50%;
-			right: 0;
-			transform: translateY(-50%);
-			width: 16px;
-			height: 15px;
-			background: url(../img/heart.svg) center/contain no-repeat;
-		}
 	}
 }
 
@@ -209,6 +215,28 @@ body._lock {
 	}
 }
 
+@media (max-width: 768px) {
+
+	.header {
+
+		// .header__cont
+		&__cont {
+			padding-top: 23px;
+			padding-bottom: 23px;
+		}
+	
+		// .header__logo
+		&__logo {
+			flex: 0 0 106px;
+		}
+	
+		// .header__support
+		&__support {
+			display: none;
+		}
+	}
+}
+
 //<================================================================== TICKER ===============================================================>\\
 
 .ticker {
@@ -228,6 +256,21 @@ body._lock {
 			font: 600 14px/1.21 $ff;
 			text-transform: uppercase;
 			margin: 0 15px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+
+	.ticker {
+	
+		// .ticker__wrapper
+		&__wrapper {
+		
+			// .ticker__wrapper span
+			& span {
+				font-size: 12px;
+			}
 		}
 	}
 }
@@ -252,12 +295,11 @@ body._lock {
 		width: calc(50% - 5px);
 	}
 
-	// .content__info
-	&__info {
-	}
-
-	// .content__video
-	&__video {
+	// .content__support
+	&__support {
+		display: none;
+		margin-top: 21px;
+		margin-bottom: 18px;
 	}
 }
 
@@ -273,7 +315,7 @@ body._lock {
 
 	// .info-content__title
 	&__title {
-		font: 700 34px/40px $ff;
+		font: 700 34px/1.2 $ff;
 		max-width: 500px;
 		margin-bottom: 11px;
 
@@ -284,6 +326,48 @@ body._lock {
 			-webkit-text-fill-color: transparent;
 			background-clip: text;
 			text-fill-color: transparent;
+		}
+	}
+
+	// .info-content__animate
+	&__animate {
+		display: inline-block;
+		transform: translateY(9px);
+		overflow: hidden;
+
+		// .info-content__animate span
+		& span {
+			display: none;
+		}
+
+		// .info-content__animate span._show
+		& span._show {
+			display: inline-block;
+			animation: 0.5s ease showLine;
+		}
+
+		@keyframes showLine {
+			0% {
+				transform: translateY(100%);
+			}
+			100% {
+				transform: translateY(0%);
+			}
+		}
+
+		// .info-content__animate span._hide
+		& span._hide {
+			display: inline-block;
+			animation: 0.5s ease hideLine;
+		}
+
+		@keyframes hideLine {
+			0% {
+				transform: translateY(0%);
+			}
+			100% {
+				transform: translateY(-100%);
+			}
 		}
 	}
 
@@ -383,35 +467,6 @@ body._lock {
 	}
 }
 
-.slide-text {
-	// display: inline-flex;
-	// height: 40px;
-	// overflow: hidden;
-
-	// .slide-text__cont
-	&__cont {
-		// display: flex;
-		// flex-flow: column nowrap;
-		// transform: translateY(100%);
-		// animation: 9s ease infinite slide-up;
-	}
-
-	// @keyframes slide-up {
-	// 	10%,
-	// 	33% {
-	// 		transform: translateY(0%);
-	// 	}
-	// 	43%,
-	// 	66% {
-	// 		transform: translateY(-100%);
-	// 	}
-	// 	76%,
-	// 	100% {
-	// 		transform: translateY(-200%);
-	// 	}
-	// }
-}
-
 .video-content {
 	position: relative;
 
@@ -481,6 +536,148 @@ body._lock {
 		// .video-content__button:hover::before
 		&:hover::before {
 			border-color: transparent transparent transparent #000;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	
+	.info-content {
+	
+		// .info-content__welcome
+		&__welcome {
+			font-size: 12px;
+		}
+	
+		// .info-content__title
+		&__title {
+			font-size: 29px;
+		}
+	
+		// .info-content__text
+		&__text {
+			font-size: 12px;
+			max-width: 350px;
+		}
+	
+		// .info-content__list
+		&__list {
+	
+			// .info-content__list li
+			& li {
+				font-size: 12px;
+			}
+		}
+	
+		// .info-content__link
+		&__link {
+			font-size: 12px;
+		}
+	
+		// .info-content__comment
+		&__comment {
+			font-size: 12px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+
+	.content {
+	
+		// .content__cont
+		&__cont {
+			flex-direction: column;
+			gap: 45px;
+			padding-top: 15px;
+			padding-bottom: 0;
+		}
+	
+		// .content__info,
+		// .content__video
+		&__info,
+		&__video {
+			width: 100%;
+		}
+
+		// .content__support
+		&__support {
+			display: block;
+		}
+	}
+	
+	.info-content {
+	
+		// .info-content__welcome
+		&__welcome {
+			font-size: 14px;
+		}
+	
+		// .info-content__title
+		&__title {
+			font-size: 22px;
+			max-width: 335px;
+			margin-bottom: 7px;
+		}
+	
+		// .info-content__animate
+		&__animate {
+			transform: translateY(6px);
+		}
+	
+		// .info-content__text
+		&__text {
+			font-size: 14px;
+			max-width: 335px;
+			margin-bottom: 25px;
+		}
+	
+		// .info-content__list
+		&__list {
+			margin-bottom: 25px;
+	
+			// .info-content__list li
+			& li {
+				font-size: 14px;
+			}
+		}
+	
+		// .info-content__link
+		&__link {
+			font-size: 14px;
+			padding: 15px 25px;
+		}
+	
+		// .info-content__comment
+		&__comment {
+			font-size: 14px;
+		}
+	}
+	
+	.video-content {
+	
+		// .video-content::before
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 200%;
+			height: 200%;
+			background: url(../img/background-mist.png) center/contain no-repeat;
+			pointer-events: none;
+		}
+	
+		// .video-content__button
+		&__button {
+			width: 46px;
+			height: 46px;
+	
+			// .video-content__button::before
+			&::before {
+				border-width: 11px 0 11px 17px;
+			}
 		}
 	}
 }
