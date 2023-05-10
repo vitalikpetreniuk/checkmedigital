@@ -483,6 +483,10 @@ body._lock {
   margin-bottom: 11px;
 }
 
+.info-content__list li strong {
+  font-weight: bold;
+}
+
 .info-content__link {
   display: inline-block;
   position: relative;

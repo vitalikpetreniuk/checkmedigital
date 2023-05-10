@@ -406,6 +406,11 @@ body._lock {
 		& li:not(:last-child) {
 			margin-bottom: 11px;
 		}
+
+		// .info-content__list li strong
+		& li strong {
+			font-weight: bold;
+		}
 	}
 
 	// .info-content__link
