@@ -439,9 +439,13 @@ body._lock {
 			transition: all linear 0.2s;
 		}
 
-		// .info-content__link:hover
+		// .info-content__link:hover::before
 		&:hover::before {
 			transform: translate(-50%, -50%)scale(1);
+		}
+
+		&_big-m {
+			margin-bottom: 20px;
 		}
 
 		// .info-content__link span
