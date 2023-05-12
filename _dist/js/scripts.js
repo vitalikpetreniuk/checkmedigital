@@ -16,7 +16,7 @@ $(function() {
 
 	$('.video-content__button').on('click', function () {
 		
-		$('.video-content__vbox video').attr('src', 'img/main.mp4').attr('controls', true).removeAttr('muted')
+		$('.video-content__vbox video').attr('src', 'img/main.mp4').attr('controls', true).removeAttr('muted').prop('muted', false);
 		$(this).remove()
 	})
 
