@@ -262,6 +262,10 @@ body._lock {
   font: 500 14px/1.21 "sf-ui-display";
 }
 
+.header__language {
+  display: none;
+}
+
 .language-toggle {
   position: relative;
 }

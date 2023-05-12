@@ -165,6 +165,11 @@ body._lock {
 		gap: 17px;
 		font: 500 14px/1.21 $ff;
 	}
+
+	// .header__language
+	&__language {
+		display: none;
+	}
 }
 
 .language-toggle {
