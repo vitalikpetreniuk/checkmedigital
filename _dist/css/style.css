@@ -1,39 +1,39 @@
 @font-face {
-  font-family: "sf-ui-display";
-  src: url("../fonts/SFUIDisplay-Light.woff2") format("woff2"), url("../fonts/SFUIDisplay-Light.woff") format("woff"), url("../fonts/SFUIDisplay-Light.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "sf-ui-display";
-  src: url("../fonts/SFUIDisplay-Medium.woff2") format("woff2"), url("../fonts/SFUIDisplay-Medium.woff") format("woff"), url("../fonts/SFUIDisplay-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "sf-ui-display";
-  src: url("../fonts/SFUIDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Semibold.woff") format("woff"), url("../fonts/SFUIDisplay-Semibold.ttf") format("truetype");
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-SemiBold.woff2") format("woff2"), url("../fonts/Manrope-SemiBold.woff") format("woff"), url("../fonts/Manrope-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "sf-ui-display";
-  src: url("../fonts/SFUIDisplay-Thin.woff2") format("woff2"), url("../fonts/SFUIDisplay-Thin.woff") format("woff"), url("../fonts/SFUIDisplay-Thin.ttf") format("truetype");
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Bold.woff2") format("woff2"), url("../fonts/Manrope-Bold.woff") format("woff"), url("../fonts/Manrope-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima-Nova";
+  src: url("../fonts/ProximaNovaT-Thin.woff2") format("woff2"), url("../fonts/ProximaNovaT-Thin.woff") format("woff"), url("../fonts/ProximaNovaT-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "sf-ui-display";
-  src: url("../fonts/SFUIDisplay-Bold.woff2") format("woff2"), url("../fonts/SFUIDisplay-Bold.woff") format("woff"), url("../fonts/SFUIDisplay-Bold.ttf") format("truetype");
-  font-weight: bold;
+  font-family: "Proxima-Nova";
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima-Nova";
+  src: url("../fonts/ProximaNova-Light.woff2") format("woff2"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
@@ -56,7 +56,7 @@ body {
 
 body {
   line-height: 1;
-  font-family: "sf-ui-display";
+  font-family: "Proxima-Nova", sans-serif;
   font-size: 14px;
   font-weight: 200;
   color: #fff;
@@ -100,7 +100,7 @@ button {
   appearance: none;
   border-radius: 0px;
   background-color: transparent;
-  font-family: "sf-ui-display";
+  font-family: "Proxima-Nova", sans-serif;
   font-size: 14px;
   font-weight: 200;
   color: #fff;
@@ -114,7 +114,7 @@ select {
   outline: none;
   border: none;
   background-color: transparent;
-  font-family: "sf-ui-display";
+  font-family: "Proxima-Nova", sans-serif;
   font-size: 14px;
   font-weight: 200;
   color: #fff;
@@ -155,7 +155,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "sf-ui-display";
+  font-family: "Proxima-Nova", sans-serif;
   font-size: 14px;
   font-weight: 200;
 }
@@ -205,7 +205,7 @@ body._lock {
 }
 
 .support {
-  font: 500 14px/1.21 "sf-ui-display";
+  font: 500 14px/1.21 "Manrope", sans-serif;
   text-align: center;
 }
 
@@ -259,7 +259,7 @@ body._lock {
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 17px;
-  font: 500 14px/1.21 "sf-ui-display";
+  font: 500 14px/1.21 "Proxima-Nova", sans-serif;
 }
 
 .header__language {
@@ -330,7 +330,7 @@ body._lock {
 
 .ticker__wrapper span {
   display: inline-block;
-  font: 600 14px/1.21 "sf-ui-display";
+  font: 600 14px/1.21 "Proxima-Nova", sans-serif;
   text-transform: uppercase;
   margin: 0 15px;
 }
@@ -360,14 +360,14 @@ body._lock {
 }
 
 .info-content__welcome {
-  font: 700 14px/1.21 "sf-ui-display";
+  font: 700 14px/1.21 "Proxima-Nova", sans-serif;
   text-transform: uppercase;
   color: #6A6A6A;
   margin-bottom: 6px;
 }
 
 .info-content__title {
-  font: 700 34px/1.2 "sf-ui-display";
+  font: 700 34px/1.2 "Proxima-Nova", sans-serif;
   max-width: 500px;
   margin-bottom: 11px;
 }
@@ -452,7 +452,7 @@ body._lock {
 }
 
 .info-content__text {
-  font: 200 14px/1.21 "sf-ui-display";
+  font: 200 14px/1.21 "Manrope", sans-serif;
   max-width: 410px;
   margin-bottom: 33px;
 }
@@ -463,7 +463,7 @@ body._lock {
 
 .info-content__list li {
   position: relative;
-  font: 300 14px/1.21 "sf-ui-display";
+  font: 300 14px/1.21 "Manrope", sans-serif;
   padding-left: 15px;
 }
 
@@ -492,7 +492,7 @@ body._lock {
 .info-content__link {
   display: inline-block;
   position: relative;
-  font: 700 14px/1.21 "sf-ui-display";
+  font: 700 14px/1.21 "Proxima-Nova", sans-serif;
   text-transform: uppercase;
   background: -o-linear-gradient(177.76deg, #e1007a 11.77%, #f19300 100%);
   background: linear-gradient(272.24deg, #e1007a 11.77%, #f19300 100%);
@@ -551,7 +551,7 @@ body._lock {
 }
 
 .info-content__comment {
-  font: 200 14px/1.21 "sf-ui-display";
+  font: 200 14px/1.21 "Manrope", sans-serif;
   color: #C1C1C1;
   text-decoration: underline;
   text-underline-offset: 3px;

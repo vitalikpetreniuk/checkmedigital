@@ -14,57 +14,57 @@
 //&subset=cyrillic-ext - підвантаження кириличної версії
 
 @font-face {
-    font-family: 'sf-ui-display';
-    src: url('../fonts/SFUIDisplay-Light.woff2') format('woff2'),
-        url('../fonts/SFUIDisplay-Light.woff') format('woff'),
-        url('../fonts/SFUIDisplay-Light.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'sf-ui-display';
-    src: url('../fonts/SFUIDisplay-Medium.woff2') format('woff2'),
-        url('../fonts/SFUIDisplay-Medium.woff') format('woff'),
-        url('../fonts/SFUIDisplay-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'sf-ui-display';
-    src: url('../fonts/SFUIDisplay-Semibold.woff2') format('woff2'),
-        url('../fonts/SFUIDisplay-Semibold.woff') format('woff'),
-        url('../fonts/SFUIDisplay-Semibold.ttf') format('truetype');
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-SemiBold.woff2') format('woff2'),
+        url('../fonts/Manrope-SemiBold.woff') format('woff'),
+        url('../fonts/Manrope-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'sf-ui-display';
-    src: url('../fonts/SFUIDisplay-Thin.woff2') format('woff2'),
-        url('../fonts/SFUIDisplay-Thin.woff') format('woff'),
-        url('../fonts/SFUIDisplay-Thin.ttf') format('truetype');
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Bold.woff2') format('woff2'),
+        url('../fonts/Manrope-Bold.woff') format('woff'),
+        url('../fonts/Manrope-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima-Nova';
+    src: url('../fonts/ProximaNovaT-Thin.woff2') format('woff2'),
+        url('../fonts/ProximaNovaT-Thin.woff') format('woff'),
+        url('../fonts/ProximaNovaT-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'sf-ui-display';
-    src: url('../fonts/SFUIDisplay-Bold.woff2') format('woff2'),
-        url('../fonts/SFUIDisplay-Bold.woff') format('woff'),
-        url('../fonts/SFUIDisplay-Bold.ttf') format('truetype');
-    font-weight: bold;
+    font-family: 'Proxima-Nova';
+    src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima-Nova';
+    src: url('../fonts/ProximaNova-Light.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Light.woff') format('woff'),
+        url('../fonts/ProximaNova-Light.ttf') format('truetype');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 // Змінна font-family
-$ff: 'sf-ui-display';
+$ff: 'Proxima-Nova', sans-serif;
 
 // Змінна font-size
 $fs: 14px;
@@ -118,7 +118,7 @@ body._lock {
 //<=================================================================== ХЕДЕР ===============================================================>\\
 
 .support {
-	font: 500 14px/1.21 $ff;
+	font: 500 14px/1.21 'Manrope', sans-serif;
 	text-align: center;
 
 	// .support p
@@ -378,7 +378,7 @@ body._lock {
 
 	// .info-content__text
 	&__text {
-		font: 200 14px/1.21 $ff;
+		font: 200 14px/1.21 'Manrope', sans-serif;
 		max-width: 410px;
 		margin-bottom: 33px;
 	}
@@ -390,7 +390,7 @@ body._lock {
 		// .info-content__list li
 		& li {
 			position: relative;
-			font: 300 14px/1.21 $ff;
+			font: 300 14px/1.21 'Manrope', sans-serif;
 			padding-left: 15px;
 		}
 
@@ -476,7 +476,7 @@ body._lock {
 
 	// .info-content__comment
 	&__comment {
-		font: 200 14px/1.21 $ff;
+		font: 200 14px/1.21 'Manrope', sans-serif;
 		color: #C1C1C1;
 		text-decoration: underline;
 		text-underline-offset: 3px;
