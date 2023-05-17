@@ -118,7 +118,7 @@ body._lock {
 //<=================================================================== ХЕДЕР ===============================================================>\\
 
 .support {
-	font: 500 14px/1.21 'Manrope', sans-serif;
+	font: 500 14px/1.21 $ff;
 	text-align: center;
 
 	// .support p
@@ -307,7 +307,7 @@ body._lock {
 
 	// .info-content__welcome
 	&__welcome {
-		font: 700 14px/1.21 'Raleway';
+		font: 700 14px/1.21 $ff;
 		text-transform: uppercase;
 		color: #6A6A6A;
 		margin-bottom: 6px;
@@ -373,7 +373,7 @@ body._lock {
 
 	// .info-content__text
 	&__text {
-		font: 200 14px/1.21 'Manrope', sans-serif;
+		font: 200 14px/1.21 $ff;
 		max-width: 410px;
 		margin-bottom: 33px;
 	}
@@ -385,7 +385,7 @@ body._lock {
 		// .info-content__list li
 		& li {
 			position: relative;
-			font: 300 14px/1.21 'Manrope', sans-serif;
+			font: 300 14px/1.21 $ff;
 			padding-left: 15px;
 		}
 
@@ -471,7 +471,7 @@ body._lock {
 
 	// .info-content__comment
 	&__comment {
-		font: 200 14px/1.21 'Manrope', sans-serif;
+		font: 200 14px/1.21 $ff;
 		color: #C1C1C1;
 		text-decoration: underline;
 		text-underline-offset: 3px;

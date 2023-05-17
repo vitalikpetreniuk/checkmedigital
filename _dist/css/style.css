@@ -205,7 +205,7 @@ body._lock {
 }
 
 .support {
-  font: 500 14px/1.21 "Manrope", sans-serif;
+  font: 500 14px/1.21 "Proxima-Nova", sans-serif;
   text-align: center;
 }
 
@@ -356,7 +356,7 @@ body._lock {
 }
 
 .info-content__welcome {
-  font: 700 14px/1.21 "Raleway";
+  font: 700 14px/1.21 "Proxima-Nova", sans-serif;
   text-transform: uppercase;
   color: #6A6A6A;
   margin-bottom: 6px;
@@ -448,7 +448,7 @@ body._lock {
 }
 
 .info-content__text {
-  font: 200 14px/1.21 "Manrope", sans-serif;
+  font: 200 14px/1.21 "Proxima-Nova", sans-serif;
   max-width: 410px;
   margin-bottom: 33px;
 }
@@ -459,7 +459,7 @@ body._lock {
 
 .info-content__list li {
   position: relative;
-  font: 300 14px/1.21 "Manrope", sans-serif;
+  font: 300 14px/1.21 "Proxima-Nova", sans-serif;
   padding-left: 15px;
 }
 
@@ -547,7 +547,7 @@ body._lock {
 }
 
 .info-content__comment {
-  font: 200 14px/1.21 "Manrope", sans-serif;
+  font: 200 14px/1.21 "Proxima-Nova", sans-serif;
   color: #C1C1C1;
   text-decoration: underline;
   text-underline-offset: 3px;
