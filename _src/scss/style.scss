@@ -14,20 +14,20 @@
 //&subset=cyrillic-ext - підвантаження кириличної версії
 
 @font-face {
-    font-family: 'Manrope';
-    src: url('../fonts/Manrope-SemiBold.woff2') format('woff2'),
-        url('../fonts/Manrope-SemiBold.woff') format('woff'),
-        url('../fonts/Manrope-SemiBold.ttf') format('truetype');
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-SemiBold.woff2') format('woff2'),
+        url('../fonts/Raleway-SemiBold.woff') format('woff'),
+        url('../fonts/Raleway-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Manrope';
-    src: url('../fonts/Manrope-Bold.woff2') format('woff2'),
-        url('../fonts/Manrope-Bold.woff') format('woff'),
-        url('../fonts/Manrope-Bold.ttf') format('truetype');
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Bold.woff2') format('woff2'),
+        url('../fonts/Raleway-Bold.woff') format('woff'),
+        url('../fonts/Raleway-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -253,7 +253,7 @@ body._lock {
 		// .ticker__wrapper span
 		& span {
 			display: inline-block;
-			font: 600 14px/1.21 $ff;
+			font: 600 14px/1.21 'Raleway';
 			text-transform: uppercase;
 			margin: 0 15px;
 		}
@@ -307,7 +307,7 @@ body._lock {
 
 	// .info-content__welcome
 	&__welcome {
-		font: 700 14px/1.21 $ff;
+		font: 700 14px/1.21 'Raleway';
 		text-transform: uppercase;
 		color: #6A6A6A;
 		margin-bottom: 6px;
@@ -315,7 +315,7 @@ body._lock {
 
 	// .info-content__title
 	&__title {
-		font: 700 34px/1.2 $ff;
+		font: 700 34px/1.2 'Raleway';
 		max-width: 500px;
 		margin-bottom: 11px;
 
@@ -417,7 +417,7 @@ body._lock {
 	&__link {
 		display: inline-block;
 		position: relative;
-		font: 700 14px/1.21 $ff;
+		font: 700 14px/1.21 'Raleway';
 		text-transform: uppercase;
 		background: linear-gradient(272.24deg, rgb(225, 0, 122) 11.77%, rgb(241, 147, 0) 100%);
 		padding: 19px 28px;

@@ -1,14 +1,14 @@
 @font-face {
-  font-family: "Manrope";
-  src: url("../fonts/Manrope-SemiBold.woff2") format("woff2"), url("../fonts/Manrope-SemiBold.woff") format("woff"), url("../fonts/Manrope-SemiBold.ttf") format("truetype");
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-SemiBold.woff2") format("woff2"), url("../fonts/Raleway-SemiBold.woff") format("woff"), url("../fonts/Raleway-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Manrope";
-  src: url("../fonts/Manrope-Bold.woff2") format("woff2"), url("../fonts/Manrope-Bold.woff") format("woff"), url("../fonts/Manrope-Bold.ttf") format("truetype");
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -262,10 +262,6 @@ body._lock {
   font: 500 14px/1.21 "Proxima-Nova", sans-serif;
 }
 
-.header__language {
-  display: none;
-}
-
 .language-toggle {
   position: relative;
 }
@@ -330,7 +326,7 @@ body._lock {
 
 .ticker__wrapper span {
   display: inline-block;
-  font: 600 14px/1.21 "Proxima-Nova", sans-serif;
+  font: 600 14px/1.21 "Raleway";
   text-transform: uppercase;
   margin: 0 15px;
 }
@@ -360,14 +356,14 @@ body._lock {
 }
 
 .info-content__welcome {
-  font: 700 14px/1.21 "Proxima-Nova", sans-serif;
+  font: 700 14px/1.21 "Raleway";
   text-transform: uppercase;
   color: #6A6A6A;
   margin-bottom: 6px;
 }
 
 .info-content__title {
-  font: 700 34px/1.2 "Proxima-Nova", sans-serif;
+  font: 700 34px/1.2 "Raleway";
   max-width: 500px;
   margin-bottom: 11px;
 }
@@ -492,7 +488,7 @@ body._lock {
 .info-content__link {
   display: inline-block;
   position: relative;
-  font: 700 14px/1.21 "Proxima-Nova", sans-serif;
+  font: 700 14px/1.21 "Raleway";
   text-transform: uppercase;
   background: -o-linear-gradient(177.76deg, #e1007a 11.77%, #f19300 100%);
   background: linear-gradient(272.24deg, #e1007a 11.77%, #f19300 100%);
